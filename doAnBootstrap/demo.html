@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../owlcarousel/assets/owl.theme.default.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../owlcarousel/owl.carousel.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                loop: true,
+                // margin: 10,
+                autoplay: true,
+                autoplayTimeout: 1500,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            });
+            $('.play').on('click', function () {
+                owl.trigger('play.owl.autoplay', [1000])
+            })
+            $('.stop').on('click', function () {
+                owl.trigger('stop.owl.autoplay')
+            })
+
+        });
+    </script>
+    <style>
+        .owl-item .active {
+            margin-right: 0px;
+        }
+
+        .fs-banner .owl-carousel .item {
+            background: url(https://storage.googleapis.com/vinfast-data-01/bgcar.png);
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            background-position: top;
+            height: auto;
+            transition: 0.3s;
+            padding: 40px 20px 0px 50px;
+            margin: 0;
+
+        }
+
+        .fs-banner .owl-carousel .item:hover {
+            background: url(https://storage.googleapis.com/vinfast-data-01/bgcar_2.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        
+        }
+        .f-banner .owl-carousel  {
+            background: url(https://storage.googleapis.com/vinfast-data-01/bg_xe_may_slide.png);
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            background-position: top;
+            height: auto;
+            transition: 0.3s;
+            padding: 40px 20px 0px 50px;
+            margin: 0;
+
+        }
+
+        .f-banner .owl-carousel .item:hover {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        
+        }
+        
+
+        .item a {
+            color: #000;
+            text-decoration: none;
+            text-align: left;
+
+        }
+
+        .fs-banner .owl-carousel .item a:hover {
+            color: #fff;
+        }
+
+        ul li {
+            text-align: left;
+            line-height: 30px;
+        }
+
+        #content {
+            text-transform: uppercase;
+
+        }
+
+        .fs-6 {
+            color: #808080;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+
+        .chi_tiet {
+            text-align: center;
+            margin-top: 70px;
+            text-transform: uppercase;
+        }
+
+        .fs-body {
+            padding: 40px 20px 0 50px;
+        }
+        .f-body{
+            margin-top: 20px;
+        }
+    </style>
+    <div class="fs-banner_S">
+        <div class="owl-carousel owl-theme">
+            <div class="item"> <a href="">
+                <div id="content">
+                    <p class="fs-6"><strong>Dòng Suv</strong> </p>
+                    <p class="fs-5">Chinh phục mọi cung đường</p>
+                    <h5>lux sa2.0</h5>
+                </div>
+                <img src="https://storage.googleapis.com/vinfast-data-01/bg-title-car.png" alt="">
+                
+                    <nav>
+                        <ul>
+                            <li>Thiết kế sang trọng, mạnh mẽ</li>
+                            <li>Hệ dẫn động 4 bánh toàn thời gian cho cảm giác lái đàm áp mà êm ái</li>
+                            <li>Khuân gầm liền khối vũng chắc chuẩn Châu Âu tối ưu</li>
+                            <li>Chuẩn an toàn cao cấp 5 sao ASIAN NCAP</li>
+                        </ul>
+                    </nav>
+              
+                
+                    <h5 class="chi_tiet">Chi tiết</h5>
+                    <img src="https://vinfastauto.com/themes/porto/img/vinfast/logo_gray.svg" width="50px" height="51px"
+                        alt="">
+                    <img src="https://storage.googleapis.com/vinfast-data-01/president.png" alt="">           
+                </a></div>
+            <div class="item"> <a href="">
+                    <div id="content">
+                        <p class="fs-6"><strong>Dòng Suv</strong> </p>
+                        <p class="fs-5">Cùng bạn bứt phá mọi giới hạn</p>
+                        <h5>VF e34</h5>
+                    </div>
+                    <img src="https://storage.googleapis.com/vinfast-data-01/bg-title-car.png" alt="">
+                   
+                        <nav>
+                            <ul>
+                                <li>Ô tô điện thông minh khởi tạo tương lai di chuyển xanh</li>
+                                <li>Hệ thống pin tiến tiến, chính sách thuê pin độc đáo</li>
+                                <li>Chi phí vận hành, bảo dưỡng, bảo hành thời gian dài,  rẻ hơn xăng</li>
+                            </ul>
+                        </nav>
+                   
+                    <h5 class="chi_tiet">Chi tiết</h5>
+                    <img src="https://vinfastauto.com/themes/porto/img/vinfast/logo_gray.svg" width="50px" height="51px"
+                        alt="">
+                    <img src="https://storage.googleapis.com/vinfast-data-01/VFe34.png" alt="">
+                </a></div>
+            <div class="item"> <a href="">
+                    <div id="content">
+                        <p class="fs-6"><strong>Dòng Sendan</strong> </p>
+                        <p class="fs-5">Tận hưởng từng khoảnh khắc</p>
+                        <h5>LUX A20</h5>
+                    </div>
+                    <img src="https://storage.googleapis.com/vinfast-data-01/bg-title-car.png" alt="">
+                        <nav>
+                            <ul>
+                                <li>Thiết kế sang trọng, tinh tế</li>
+                                <li>Động cơ tăng áp mạnh mẽ, hệ thống treo chuẩn ASIAN</li>
+                                <li>Hệ dẫn động cầu sau và hệ thống treo độc lập cho cảm giác lái xe </li>
+                                <li>Chuẩn an toàn cao cấp ASIAN NCAP</li>
+                            </ul>
+                        </nav>
+                    <h5 class="chi_tiet">Chi tiết</h5>
+                    <img src="https://vinfastauto.com/themes/porto/img/vinfast/logo_gray.svg" width="50px" height="51px"
+                        alt="">
+                    <img src="https://storage.googleapis.com/vinfast-data-01/2LuxSA.png" alt="">
+                </a></div>
+            <div class="item"> <a href="">
+                    <div id="content">
+                        <p class="fs-6"><strong>Dòng hatchback</strong> </p>
+                        <p class="fs-5">tối ưu mọi trải nghiệm</p>
+                        <h5>FADIL</h5>
+                    </div>
+
+                    <img src="https://storage.googleapis.com/vinfast-data-01/bg-title-car.png" alt="">
+               
+                        <nav>
+                            <ul>
+                                <li>Xe đô thị cỡ nhỏ hoàn hảo</li>
+                                <li>Khả năng vận hành mạnh mẽ dẫn đầu phân khúc</li>
+                                <li>Hệ thống giải trí và kết nối hiện đại bậc nhất dẫn đầu trong phân khúc</li>
+                                <li>Chuẩn an toàn 4 sao ASIAN NCAP</li>
+                            </ul>
+                        </nav>
+                    <h5 class="chi_tiet">Chi tiết</h5>
+                    <img src="https://vinfastauto.com/themes/porto/img/vinfast/logo_gray.svg" width="50px" height="51px"
+                        alt="">
+                    <img src="https://storage.googleapis.com/vinfast-data-01/LuxA_1.png" alt="">
+                </a></div>
+            <div class="item"> <a href="">
+                    <div id="content">
+                        <p class="fs-6"><strong>Dòng Suv</strong> </p>
+                        <p class="fs-5">Dấu ấn người thủ lĩnh</p>
+                        <h5>fresident</h5>
+                    </div>
+                    <img src="https://storage.googleapis.com/vinfast-data-01/bg-title-car.png" alt="">
+                    
+                        <nav>
+                            <ul>
+                                <li>Lời khẳng định về khả năng sản xuất ô tô của VinFast</li>
+                                <li>Phiên bản giới hạn 500 chiếc trên toàn thế giới</li>
+                                <li>Thiết kế uy lực đầy kiêu hãnh, tôn dấu tin hoa của chủ nhân</li>
+                                <!-- <li>Khả năng vận hành mạnh mẽ với động cơ V8 6.2L bậc nhất thế giới</li> -->
+                            </ul>
+                        </nav>
+                    <h5 class="chi_tiet">Chi tiết</h5>
+                    <img src="https://vinfastauto.com/themes/porto/img/vinfast/logo_gray.svg" width="50px" height="51px"
+                        alt="">
+                    <img src="https://storage.googleapis.com/vinfast-data-01/fadill.png" alt="">
+                </a></div>     
+        </div>
+    </div>
+    <div class="f-banner_S">
+        <h2>Xe máy điện</h2>
+        <div class="owl-carousel owl-theme">
+            
+            <div class="item"> <a href="">
+                <img src="https://storage.googleapis.com/vinfast-data-01/FELIZ_0.png" alt="">
+                <h2>Feliz</h2>
+                <h3>Sống thanh lịch</h3>
+                    <nav>
+                        <ul class="fw-light">
+                            <li>Thiết kế thời trang</li>
+                            <li>Vận hành êm ái hai chế độ lái Eco và Sprot linh hoạt</li>
+                            <li>Vận tốc tối đa 60km/h. Quãng đường lên tới 90km</li>
+                            <li>Cấp xe rộng tới 20l, tiêu chuẩn chống nước IP67</li>
+                        </ul>
+                    </nav>
+                </a></div>
+            <div class="item"> <a href="">
+                    <img src="https://storage.googleapis.com/vinfast-data-01/KLARA_S.png" alt="">
+                    <h2>KLARAS</h2>
+                    <h3>Khởi đầu phong cách mới</h3>
+                        <nav>
+                            <ul class="fw-light">
+                                <li>Thiết kế sang trọng, tôn vinh voc dáng Việt</li>
+                                <li>Vận hành mạnh mẽ, quãng đường di chuyển tới 120km</li>
+                                <li>Công nghệ thông minh tích hợp e SIM</li>
+                                <li>Tiêu chuẩn chống nước IP57</li>
+                            </ul>
+                        </nav>
+                </a></div>
+            <div class="item"> <a href="">
+                    <img src="https://storage.googleapis.com/vinfast-data-01/IMPES.png" alt="">
+                    <h2>impes</h2>
+                    <h3>Dáng chơi sành điệu, kiểu chất chơi</h3>
+                        <nav>
+                            <ul class="fw-light">
+                                <li>Thiết kế sành điệu</li>
+                                <li>Tính năng thông minh vượt trộ</li>
+                                <li>Vận hành êm ái, quãng đường di chuyển lên tới 70km </li>
+                                <li>Công nghệ pin LITHIUM, bền bỉ, công nghệ chống nước IP57</li>
+                            </ul>
+                        </nav>
+                </a></div>
+            <div class="item"> <a href="">
+                    <img src="https://storage.googleapis.com/vinfast-data-01/LUDO.png" alt="">
+                    <h2>LUDO</h2>
+                    <h3>Tỏa chất riêng-bật cá tính</h3>
+                        <nav>
+                            <ul class="fw-light">
+                                <li>Thiết kế thể thao và cá tính</li>
+                                <li>Tính năng thông minh và vượt trội</li>
+                                <li>Vận hành mạnh mẽ, vận tốc lên tới 49km/h</li>
+                                <li>Công nghệ Lithium bền bỉ, công nghệ chống nước IP57</li>
+                            </ul>
+                        </nav>
+                </a></div>
+            <div class="item"> <a href="">
+                    <img src="https://storage.googleapis.com/vinfast-data-01/THEON_0.png" alt="">
+                    <h2>THEON</h2>
+                    <h3>Công nghệ bứt phá, trải nghiệm định cao</h3>
+                    
+                        <nav>
+                            <ul class="fw-light">
+                                <li>Vận hành mạnh mẽ, vận tốc lên tới 90km/h</li>
+                                <li>Hệ thống phanh APS 2 phanh, chuẩn chống nước IP67</li>
+                                <li>Công nghệ bứt phá với hệ thống PAAK, Smart key, tích hợp eSIM</li>
+                               <li>Công nghệ phin Lithium tiên tiến</li>
+                            </ul>
+                        </nav>
+                </a></div>     
+        </div>
+    </div>
+</body>
+
+</html>
